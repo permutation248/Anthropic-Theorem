@@ -1,0 +1,40 @@
+{
+  "unit": "cjson/cjson_read_fuzzer",
+  "source_commit": "32c8baf6e92f173b445903857770da103ba307e0",
+  "checker_image": "ghcr.io/theorem-labs/oss-fuzz-theorems-checker@sha256:063f93261f11ba449f1c3825884fadc65cf1fc836d4a3ee534633211abbdc3eb",
+  "proved_statements": [
+    {
+      "name": "cjson/cjson_read_fuzzer/asan_agrees",
+      "allowed_axiom_count": 36
+    },
+    {
+      "name": "cjson/cjson_read_fuzzer/ubsan_agrees",
+      "allowed_axiom_count": 15
+    },
+    {
+      "name": "cjson/cjson_read_fuzzer/asan_ubsan_agrees",
+      "allowed_axiom_count": 36
+    }
+  ],
+  "log_sha256": "8d9e38441755aaadb1be8717ab0e74802ed57681080a0d742bab4d5c0e7e901c",
+  "evidence_sha256": {
+    "proof-8yoinndl/Proof.v": "76d91d6b2a6e55079ed11dd9c7f589782118899213e74f7b4109ba5934a81a6c",
+    "proof-xr4a1pch/Proof.v": "36f31e34482c7b6637f9d6d434348c7c222af63d84a252c2a524da4e1057f60e",
+    "proof-5g3h2dt1/Proof.v": "6c78956dcc49a88891230fae6f775c76414195513c4c3bd78b481a0d2df24203",
+    "proof-8yoinndl/assumptions.out": "4632b6d4b5d7d06ab79fe8f17ed358180cdfb8945a3f6907ad58ff64dd1466ec",
+    "proof-xr4a1pch/assumptions.out": "d0a538d26101ede968a64d67ea6f7ea33908754e40a174a54c535542d8a11f75",
+    "proof-5g3h2dt1/assumptions.out": "4632b6d4b5d7d06ab79fe8f17ed358180cdfb8945a3f6907ad58ff64dd1466ec",
+    "proof-8yoinndl/compile.log": "01269b927d16c14e7194fea8eba821d42c6021886f3cfab92162b9b370e17a2b",
+    "proof-xr4a1pch/compile.log": "3459cf259fe289ec7bf7bf27707f0aab3dc125b2e4be49191825d3f51fda184b",
+    "proof-5g3h2dt1/compile.log": "5ff6e640cc33eeaaae1ec12c02dba94a87f4b56cb3b8c77110f2a109456d1d87",
+    "proof-8yoinndl/wrapper.log": "5393a963354bf2bd7af9c4d073a8a8917f579bd4bc6e42ccedf8657a50a44f22",
+    "proof-xr4a1pch/wrapper.log": "67f7a33494ba87304fd5fdb795ec4213cd70a8f090b810e6ef12b0fb24fb433c",
+    "proof-5g3h2dt1/wrapper.log": "ee97c6fde96c488b49420a9a1a20158505673c28cd7ade73a076947c0247c5cd",
+    "proof-8yoinndl/wrap/Wrapper.v": "07efccc3625c7783cde5a80d3dd614e4d7e291bcf7de9a533fbe609a12480984",
+    "proof-xr4a1pch/wrap/Wrapper.v": "24fb99c3341006c62f573152ad15f59acf7eece87206ae36e5df4675ef1d1692",
+    "proof-5g3h2dt1/wrap/Wrapper.v": "561c8b725ed3ad0114e18ac370bc6836180fcf50acd5de96b9520bd66d525159"
+  },
+  "run_result": "${STUDY_ROOT}/results/cjson__cjson_read_fuzzer-latest.json",
+  "scope": "Binary SHA, statements, all published proofs for this harness, typed wrappers and allowed-axiom audit; excludes counterexamples and optional rocqchk",
+  "elapsed_seconds": 732.2
+}

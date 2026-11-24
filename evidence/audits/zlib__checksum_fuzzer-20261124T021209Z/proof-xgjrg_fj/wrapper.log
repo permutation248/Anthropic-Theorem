@@ -1,0 +1,57 @@
+$ rocq compile -w -all -Q /work/_build/default/theories OSSVerify.Core -Q /work/_build/default/projects/zlib/checksum_fuzzer OSSVerify.zlib.checksum_fuzzer -Q /work/_build/default/projects/zlib/checksum_fuzzer/proofs/lib OSSVerify.Proofs.zlib.checksum_fuzzer.lib -Q /tmp/oft-check-itc5_pic/proof-xgjrg_fj OSSVerify.Proofs.zlib.checksum_fuzzer.plain_halts -Q /tmp/oft-check-itc5_pic/proof-xgjrg_fj/wrap Wrap.plain_halts /tmp/oft-check-itc5_pic/proof-xgjrg_fj/wrap/Wrapper.v
+Warning:
+/work/_build/default/projects/zlib/checksum_fuzzer/proofs/lib/Reusable/Z was
+previously bound to OSSVerify.zlib.checksum_fuzzer.proofs.lib.Reusable.Z; it
+is remapped to OSSVerify.Proofs.zlib.checksum_fuzzer.lib.Reusable.Z
+[overriding-logical-loadpath,filesystem,default]
+Warning:
+/work/_build/default/projects/zlib/checksum_fuzzer/proofs/lib/Reusable/R was
+previously bound to OSSVerify.zlib.checksum_fuzzer.proofs.lib.Reusable.R; it
+is remapped to OSSVerify.Proofs.zlib.checksum_fuzzer.lib.Reusable.R
+[overriding-logical-loadpath,filesystem,default]
+Warning:
+/work/_build/default/projects/zlib/checksum_fuzzer/proofs/lib/Reusable was
+previously bound to OSSVerify.zlib.checksum_fuzzer.proofs.lib.Reusable; it is
+remapped to OSSVerify.Proofs.zlib.checksum_fuzzer.lib.Reusable
+[overriding-logical-loadpath,filesystem,default]
+Warning:
+/work/_build/default/projects/zlib/checksum_fuzzer/proofs/lib/MayFail/Reusable/R
+was previously bound to
+OSSVerify.zlib.checksum_fuzzer.proofs.lib.MayFail.Reusable.R; it is remapped
+to OSSVerify.Proofs.zlib.checksum_fuzzer.lib.MayFail.Reusable.R
+[overriding-logical-loadpath,filesystem,default]
+Warning:
+/work/_build/default/projects/zlib/checksum_fuzzer/proofs/lib/MayFail/Reusable
+was previously bound to
+OSSVerify.zlib.checksum_fuzzer.proofs.lib.MayFail.Reusable; it is remapped to
+OSSVerify.Proofs.zlib.checksum_fuzzer.lib.MayFail.Reusable
+[overriding-logical-loadpath,filesystem,default]
+Warning:
+/work/_build/default/projects/zlib/checksum_fuzzer/proofs/lib/MayFail/Checksum
+was previously bound to
+OSSVerify.zlib.checksum_fuzzer.proofs.lib.MayFail.Checksum; it is remapped to
+OSSVerify.Proofs.zlib.checksum_fuzzer.lib.MayFail.Checksum
+[overriding-logical-loadpath,filesystem,default]
+Warning:
+/work/_build/default/projects/zlib/checksum_fuzzer/proofs/lib/MayFail was
+previously bound to OSSVerify.zlib.checksum_fuzzer.proofs.lib.MayFail; it is
+remapped to OSSVerify.Proofs.zlib.checksum_fuzzer.lib.MayFail
+[overriding-logical-loadpath,filesystem,default]
+Warning:
+/work/_build/default/projects/zlib/checksum_fuzzer/proofs/lib/Checksum/Lib
+was previously bound to
+OSSVerify.zlib.checksum_fuzzer.proofs.lib.Checksum.Lib; it is remapped to
+OSSVerify.Proofs.zlib.checksum_fuzzer.lib.Checksum.Lib
+[overriding-logical-loadpath,filesystem,default]
+Warning:
+/work/_build/default/projects/zlib/checksum_fuzzer/proofs/lib/Checksum was
+previously bound to OSSVerify.zlib.checksum_fuzzer.proofs.lib.Checksum; it is
+remapped to OSSVerify.Proofs.zlib.checksum_fuzzer.lib.Checksum
+[overriding-logical-loadpath,filesystem,default]
+Warning: /work/_build/default/projects/zlib/checksum_fuzzer/proofs/lib was
+previously bound to OSSVerify.zlib.checksum_fuzzer.proofs.lib; it is remapped
+to OSSVerify.Proofs.zlib.checksum_fuzzer.lib
+[overriding-logical-loadpath,filesystem,default]
+Warning: /tmp/oft-check-itc5_pic/proof-xgjrg_fj/wrap was previously bound to
+OSSVerify.Proofs.zlib.checksum_fuzzer.plain_halts.wrap; it is remapped to
+Wrap.plain_halts [overriding-logical-loadpath,filesystem,default]

@@ -1,0 +1,70 @@
+{
+  "recorded_at": "2026-11-24T02:27:41.723476+00:00",
+  "scope": "2 public harnesses / 5 published statements; not full report or all public proofs",
+  "proof_runs": [
+    {
+      "unit": "zlib/checksum_fuzzer",
+      "status": "passed",
+      "started_at": "20261124T021209Z",
+      "command": [
+        "${STUDY_ROOT}/bin/checker",
+        "oss-verify-proofs",
+        "./oft",
+        "check",
+        "zlib/checksum_fuzzer",
+        "--parts",
+        "statements,proofs",
+        "--proof-jobs",
+        "1"
+      ],
+      "log": "${STUDY_ROOT}/logs/zlib__checksum_fuzzer-20261124T021209Z.log",
+      "source_commit": "32c8baf6e92f173b445903857770da103ba307e0",
+      "scope": "Binary SHA, statements, all published proofs for this harness, typed wrappers and allowed-axiom audit; excludes counterexamples and optional rocqchk",
+      "cache_mode": "Independent per-harness cache; seeded from earlier successful run when available",
+      "oft_jobs": "4",
+      "exit_code": 0,
+      "elapsed_seconds": 264.86,
+      "finished_at": "2026-11-24T02:16:34.397646+00:00"
+    },
+    {
+      "unit": "cjson/cjson_read_fuzzer",
+      "status": "passed",
+      "started_at": "20261124T021210Z",
+      "command": [
+        "${STUDY_ROOT}/bin/checker",
+        "oss-verify-proofs",
+        "./oft",
+        "check",
+        "cjson/cjson_read_fuzzer",
+        "--parts",
+        "statements,proofs",
+        "--proof-jobs",
+        "1"
+      ],
+      "log": "${STUDY_ROOT}/logs/cjson__cjson_read_fuzzer-20261124T021210Z.log",
+      "source_commit": "32c8baf6e92f173b445903857770da103ba307e0",
+      "scope": "Binary SHA, statements, all published proofs for this harness, typed wrappers and allowed-axiom audit; excludes counterexamples and optional rocqchk",
+      "cache_mode": "Independent per-harness cache; seeded from earlier successful run when available",
+      "oft_jobs": "4",
+      "exit_code": 0,
+      "elapsed_seconds": 732.2,
+      "finished_at": "2026-11-24T02:24:22.472129+00:00"
+    }
+  ],
+  "python_environment": "${STUDY_ROOT}/results/enrollment-environment.json",
+  "source_integrity": "${STUDY_ROOT}/results/source-integrity.json",
+  "full_report_reproduced": false,
+  "optional_rocqchk_run": false,
+  "vscode": {
+    "workspace_opened": true,
+    "host": "<study-host>",
+    "python_interpreter": ".venv/bin/python",
+    "rocq_editor": "VsRocq 2.4.3 + Rocq 9.2",
+    "interactive_checked_file": "examples/ModelSmoke.v",
+    "observed_goal": "page_size = 4096%Z",
+    "errors": 0,
+    "warnings": 0,
+    "note": "Two informational Check messages; smoke theorem is authored environment test, not a report theorem"
+  },
+  "rocq_editor_receipt": "${STUDY_ROOT}/results/rocq-editor-environment.json"
+}

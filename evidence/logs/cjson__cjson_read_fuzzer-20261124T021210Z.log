@@ -1,0 +1,10 @@
+Command: ${STUDY_ROOT}/bin/checker oss-verify-proofs ./oft check cjson/cjson_read_fuzzer --parts statements,proofs --proof-jobs 1
+stack: at least 256 MiB usable (soft 2147483648, hard unlimited; started with soft 2147483648, hard unlimited; runtime linux)
+projects/cjson/cjson_read_fuzzer: statements compiled, each of the 15 listed defined
+projects/cjson/cjson_read_fuzzer/proofs/lib: 1329 files compiled or taken from dune's cache (log /tmp/oft-check-co9ma209/cjson.cjson_read_fuzzer.lib.dune.log)
+projects/cjson/cjson_read_fuzzer/proofs/asan_agrees: proves cjson/cjson_read_fuzzer/asan_agrees; assumptions: 36 axioms, all allowed
+projects/cjson/cjson_read_fuzzer/proofs/ubsan_agrees: proves cjson/cjson_read_fuzzer/ubsan_agrees; assumptions: 15 axioms, all allowed
+projects/cjson/cjson_read_fuzzer/proofs/asan_ubsan_agrees: proves cjson/cjson_read_fuzzer/asan_ubsan_agrees; assumptions: 36 axioms, all allowed
+cjson/cjson_read_fuzzer: peak memory 3.2 GiB (anon in this process's cgroup, sampled every 2 s) on 4 CPUs
+COMPILED 1342 file(s) with dune -j 4
+oft check: 4 step(s) passed, 0 failed; work files in /tmp/oft-check-co9ma209

@@ -1,0 +1,62 @@
+{
+  "configured_at": "2026-11-24T02:26:43.060960+00:00",
+  "server": "vsrocq-language-server",
+  "version": "2.4.3",
+  "rocq": "9.2.0",
+  "ocaml": "4.14.3",
+  "lps_commit": "f1006fe8178338a499b5e5c41be83006c4edd058",
+  "source": "opam registry package vsrocq-language-server.2.4.3",
+  "extension": "rocq-prover.vsrocq@2.4.3",
+  "wrapper": "${STUDY_ROOT}/bin/vsrocqtop",
+  "runtime": "${EDITOR_RUNTIME}",
+  "original_checker_unchanged": [
+    {
+      "path": "home/opam/.opam/4.14/bin/rocq",
+      "original": "7a5dbe6ec5a61f80e1a6214cd739358d98d9f7663bcbf2fe13ec305a1e6d7add",
+      "editor": "7a5dbe6ec5a61f80e1a6214cd739358d98d9f7663bcbf2fe13ec305a1e6d7add"
+    },
+    {
+      "path": "home/opam/.opam/4.14/bin/coqc",
+      "original": "9fd0cbc70882f1a96371eacbf1fe9512ed26ade98e80edd8b210f1f2a8440bbe",
+      "editor": "9fd0cbc70882f1a96371eacbf1fe9512ed26ade98e80edd8b210f1f2a8440bbe"
+    },
+    {
+      "path": "home/opam/.opam/4.14/lib/coq/user-contrib/LinuxProcessSemantics/LinuxProcessSem/State.vo",
+      "original": "7052e202862bbb91e96ff641b8a0e446583485806aa21ee931021b8abe709508",
+      "editor": "7052e202862bbb91e96ff641b8a0e446583485806aa21ee931021b8abe709508"
+    }
+  ],
+  "installation_jobs": 4,
+  "smoke": {
+    "file": "examples/ModelSmoke.v",
+    "command": "rocq compile /tmp/ModelSmoke.v",
+    "exit_code": 0,
+    "scope": "Authored environment smoke check; not a research theorem"
+  },
+  "network": "Disabled for editor runtime; enabled only for installer",
+  "archive": "${STUDY_ROOT}/toolchains/vsrocq-2.4.3-rocq-9.2.tar.zst",
+  "restore": "bin/restore-editor (also called automatically by wrapper when runtime missing)",
+  "limitations": [
+    "Editing published proof imports may need a separately built dependency tree. This smoke verifies installed pinned LPS, not all proof modules."
+  ],
+  "archive_restore_test": {
+    "status": "passed",
+    "steps": [
+      "independent temporary extraction",
+      "vsrocqtop --version",
+      "rocq compile /tmp/ModelSmoke.v"
+    ],
+    "exit_code": 0
+  },
+  "archive_sha256": "09440b9205a2ee53e6c99fae278c4ebc81e661dcc86bbf4c7a75e0965fddd471",
+  "interactive_ui": {
+    "status": "passed",
+    "observed_by": "parent agent via VS Code UI",
+    "file": "examples/ModelSmoke.v",
+    "line": 7,
+    "goal": "page_size = 4096%Z",
+    "errors": 0,
+    "warnings": 0,
+    "infos": 2
+  }
+}

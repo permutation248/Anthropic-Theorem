@@ -1,0 +1,24 @@
+{
+  "unit": "zlib/checksum_fuzzer",
+  "status": "passed",
+  "started_at": "20261124T021209Z",
+  "command": [
+    "${STUDY_ROOT}/bin/checker",
+    "oss-verify-proofs",
+    "./oft",
+    "check",
+    "zlib/checksum_fuzzer",
+    "--parts",
+    "statements,proofs",
+    "--proof-jobs",
+    "1"
+  ],
+  "log": "${STUDY_ROOT}/logs/zlib__checksum_fuzzer-20261124T021209Z.log",
+  "source_commit": "32c8baf6e92f173b445903857770da103ba307e0",
+  "scope": "Binary SHA, statements, all published proofs for this harness, typed wrappers and allowed-axiom audit; excludes counterexamples and optional rocqchk",
+  "cache_mode": "Independent per-harness cache; seeded from earlier successful run when available",
+  "oft_jobs": "4",
+  "exit_code": 0,
+  "elapsed_seconds": 264.86,
+  "finished_at": "2026-11-24T02:16:34.397646+00:00"
+}

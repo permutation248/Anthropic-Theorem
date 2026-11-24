@@ -1,0 +1,31 @@
+{
+  "unit": "zlib/checksum_fuzzer",
+  "source_commit": "32c8baf6e92f173b445903857770da103ba307e0",
+  "checker_image": "ghcr.io/theorem-labs/oss-fuzz-theorems-checker@sha256:063f93261f11ba449f1c3825884fadc65cf1fc836d4a3ee534633211abbdc3eb",
+  "proved_statements": [
+    {
+      "name": "zlib/checksum_fuzzer/plain_halts",
+      "allowed_axiom_count": 15
+    },
+    {
+      "name": "zlib/checksum_fuzzer/plain_halts_may_fail",
+      "allowed_axiom_count": 15
+    }
+  ],
+  "log_sha256": "cd55d6deaaade1c4528b6824ca77a0d4e9f7a12362641ef1fd33052719eb9f73",
+  "evidence_sha256": {
+    "proof-xgjrg_fj/Proof.v": "d0db2f387623a4b7038ad1dd7c4efea8a28e2784a8e4cabd91270f5fb99e8ffe",
+    "proof-dcutiy6x/Proof.v": "d5eee20dbe39f9d496482153747b82e86966b891a4d4c70417c22075471ca7ce",
+    "proof-xgjrg_fj/assumptions.out": "d0a538d26101ede968a64d67ea6f7ea33908754e40a174a54c535542d8a11f75",
+    "proof-dcutiy6x/assumptions.out": "d0a538d26101ede968a64d67ea6f7ea33908754e40a174a54c535542d8a11f75",
+    "proof-xgjrg_fj/compile.log": "052b74ee49424f0649a4dff099416da27951ef725f6c41ce3ce73d3cacaa6b55",
+    "proof-dcutiy6x/compile.log": "70ea657bff23d49b25a4a641adf5905af9ca3193b705252bae05687abaf83951",
+    "proof-xgjrg_fj/wrapper.log": "be59d900e9411e1a3bb2f001ca34ea0f76fbbc3f38783dff25cd6dab47b99279",
+    "proof-dcutiy6x/wrapper.log": "6b15302ee508119578c717b18836d8119f48cc136f8e6cd7e71122b1e0e033b7",
+    "proof-xgjrg_fj/wrap/Wrapper.v": "4198bfb28816a5ff00b1923b2e65c2eae8609dd007a319070ff3cfe4e5f252c3",
+    "proof-dcutiy6x/wrap/Wrapper.v": "236a98f2d2f274ad035c3f8c4c3c6c72a26df135ffa6a0c340ecb562161ade41"
+  },
+  "run_result": "${STUDY_ROOT}/results/zlib__checksum_fuzzer-latest.json",
+  "scope": "Binary SHA, statements, all published proofs for this harness, typed wrappers and allowed-axiom audit; excludes counterexamples and optional rocqchk",
+  "elapsed_seconds": 264.86
+}

@@ -1,0 +1,17 @@
+.cache/
+.venv/
+runs/
+**/_build/
+**/__pycache__/
+*.pyc
+*.vo
+*.vos
+*.vok
+*.glob
+.*.aux
+*.tar
+*.tar.zst
+.env
+.env.*
+!.env.example
+.DS_Store

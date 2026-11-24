@@ -1,0 +1,9 @@
+Command: ${STUDY_ROOT}/bin/checker oss-verify-proofs ./oft check zlib/checksum_fuzzer --parts statements,proofs --proof-jobs 1
+stack: at least 256 MiB usable (soft 2147483648, hard unlimited; started with soft 2147483648, hard unlimited; runtime linux)
+projects/zlib/checksum_fuzzer: statements compiled, each of the 15 listed defined
+projects/zlib/checksum_fuzzer/proofs/lib: 625 files compiled or taken from dune's cache (log /tmp/oft-check-itc5_pic/zlib.checksum_fuzzer.lib.dune.log)
+projects/zlib/checksum_fuzzer/proofs/plain_halts: proves zlib/checksum_fuzzer/plain_halts; assumptions: 15 axioms, all allowed
+projects/zlib/checksum_fuzzer/proofs/plain_halts_may_fail: proves zlib/checksum_fuzzer/plain_halts_may_fail; assumptions: 15 axioms, all allowed
+zlib/checksum_fuzzer: peak memory 1.4 GiB (anon in this process's cgroup, sampled every 2 s) on 4 CPUs
+COMPILED 635 file(s) with dune -j 4
+oft check: 3 step(s) passed, 0 failed; work files in /tmp/oft-check-itc5_pic

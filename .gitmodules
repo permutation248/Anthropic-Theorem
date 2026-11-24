@@ -1,0 +1,9 @@
+[submodule "oss-verify"]
+	path = oss-verify
+	url = https://github.com/theorem-labs/oss-verify.git
+[submodule "oss-verify-proofs"]
+	path = oss-verify-proofs
+	url = https://github.com/theorem-labs/oss-verify-proofs.git
+[submodule "rocq-linux-process-semantics"]
+	path = rocq-linux-process-semantics
+	url = https://github.com/theorem-labs/rocq-linux-process-semantics.git

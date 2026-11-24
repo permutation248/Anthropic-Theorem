@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Replay: zlib/checksum_fuzzer",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": [
+        "${workspaceFolder}/scripts/study.py",
+        "verify",
+        "zlib/checksum_fuzzer"
+      ],
+      "problemMatcher": [],
+      "group": "test"
+    },
+    {
+      "label": "Replay: cjson/cjson_read_fuzzer",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": [
+        "${workspaceFolder}/scripts/study.py",
+        "verify",
+        "cjson/cjson_read_fuzzer"
+      ],
+      "problemMatcher": [],
+      "group": "test"
+    }
+  ]
+}

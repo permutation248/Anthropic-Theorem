@@ -1,0 +1,19 @@
+{
+  "purpose": "Public study workspace for Anthropic / Theorem formal software verification",
+  "checker_image": "ghcr.io/theorem-labs/oss-fuzz-theorems-checker@sha256:063f93261f11ba449f1c3825884fadc65cf1fc836d4a3ee534633211abbdc3eb",
+  "rocq": "9.2.0",
+  "repositories": {
+    "oss-verify": {
+      "commit": "6b4c8dc308d96a0f290446a190c31d79cb8cee47",
+      "origin": "https://github.com/theorem-labs/oss-verify.git"
+    },
+    "oss-verify-proofs": {
+      "commit": "32c8baf6e92f173b445903857770da103ba307e0",
+      "origin": "https://github.com/theorem-labs/oss-verify-proofs.git"
+    },
+    "rocq-linux-process-semantics": {
+      "commit": "f1006fe8178338a499b5e5c41be83006c4edd058",
+      "origin": "https://github.com/theorem-labs/rocq-linux-process-semantics.git"
+    }
+  }
+}

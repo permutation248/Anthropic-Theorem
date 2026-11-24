@@ -1,0 +1,171 @@
+Axioms:
+Corelib.Numbers.Cyclic.Int63.Uint63Axioms.sub_spec :
+  forall x y : Corelib.Numbers.Cyclic.Int63.PrimInt63.int,
+  Corelib.Numbers.Cyclic.Int63.Uint63Axioms.to_Z
+    (Corelib.Numbers.Cyclic.Int63.PrimInt63.sub x y) =
+  ((Corelib.Numbers.Cyclic.Int63.Uint63Axioms.to_Z x -
+    Corelib.Numbers.Cyclic.Int63.Uint63Axioms.to_Z y)
+   mod Corelib.Numbers.Cyclic.Int63.Uint63Axioms.wB)%Z
+Corelib.Strings.PrimStringAxioms.sub_spec :
+  forall (s : Corelib.Strings.PrimString.string)
+    (off len : Corelib.Numbers.Cyclic.Int63.PrimInt63.int),
+  Corelib.Strings.PrimStringAxioms.to_list
+    (Corelib.Strings.PrimString.sub s off len) =
+  Corelib.Lists.ListDef.firstn
+    (Corelib.BinNums.IntDef.Z.to_nat
+       (Corelib.Numbers.Cyclic.Int63.Uint63Axioms.to_Z len))
+    (Corelib.Lists.ListDef.skipn
+       (Corelib.BinNums.IntDef.Z.to_nat
+          (Corelib.Numbers.Cyclic.Int63.Uint63Axioms.to_Z off))
+       (Corelib.Strings.PrimStringAxioms.to_list s))
+Corelib.Strings.PrimString.sub :
+  Corelib.Strings.PrimString.string ->
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int ->
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int ->
+  Corelib.Strings.PrimString.string
+Corelib.Numbers.Cyclic.Int63.PrimInt63.sub :
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int ->
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int ->
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int
+Corelib.Strings.PrimString.string : Set
+Corelib.Numbers.Cyclic.Int63.Uint63Axioms.of_to_Z :
+  forall x : Corelib.Numbers.Cyclic.Int63.PrimInt63.int,
+  Corelib.Numbers.Cyclic.Int63.Uint63Axioms.of_Z
+    (Corelib.Numbers.Cyclic.Int63.Uint63Axioms.to_Z x) =
+  x
+Corelib.Strings.PrimStringAxioms.make_spec :
+  forall (i : Corelib.Numbers.Cyclic.Int63.PrimInt63.int)
+    (c : Corelib.Strings.PrimString.char63),
+  Corelib.Strings.PrimStringAxioms.to_list
+    (Corelib.Strings.PrimString.make i c) =
+  Corelib.Lists.ListDef.repeat
+    (Corelib.Numbers.Cyclic.Int63.PrimInt63.land c 0xff)
+    (Corelib.Init.Nat.min
+       (Corelib.BinNums.IntDef.Z.to_nat
+          (Corelib.Numbers.Cyclic.Int63.Uint63Axioms.to_Z i))
+       (Corelib.BinNums.IntDef.Z.to_nat
+          (Corelib.Numbers.Cyclic.Int63.Uint63Axioms.to_Z
+             Corelib.Strings.PrimString.max_length)))
+Corelib.Strings.PrimString.make :
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int ->
+  Corelib.Strings.PrimString.char63 -> Corelib.Strings.PrimString.string
+Corelib.Numbers.Cyclic.Int63.Uint63Axioms.ltb_spec :
+  forall x y : Corelib.Numbers.Cyclic.Int63.PrimInt63.int,
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.ltb x y =
+  Corelib.Init.Datatypes.true <->
+  (Corelib.Numbers.Cyclic.Int63.Uint63Axioms.to_Z x <
+   Corelib.Numbers.Cyclic.Int63.Uint63Axioms.to_Z y)%Z
+Corelib.Numbers.Cyclic.Int63.PrimInt63.ltb :
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int ->
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int -> Corelib.Init.Datatypes.bool
+Corelib.Numbers.Cyclic.Int63.Uint63Axioms.lsr_spec :
+  forall x p : Corelib.Numbers.Cyclic.Int63.PrimInt63.int,
+  Corelib.Numbers.Cyclic.Int63.Uint63Axioms.to_Z
+    (Corelib.Numbers.Cyclic.Int63.PrimInt63.lsr x p) =
+  (Corelib.Numbers.Cyclic.Int63.Uint63Axioms.to_Z x /
+   2 ^ Corelib.Numbers.Cyclic.Int63.Uint63Axioms.to_Z p)%Z
+Corelib.Numbers.Cyclic.Int63.PrimInt63.lsr :
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int ->
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int ->
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int
+Corelib.Numbers.Cyclic.Int63.Uint63Axioms.lsl_spec :
+  forall x p : Corelib.Numbers.Cyclic.Int63.PrimInt63.int,
+  Corelib.Numbers.Cyclic.Int63.Uint63Axioms.to_Z
+    (Corelib.Numbers.Cyclic.Int63.PrimInt63.lsl x p) =
+  ((Corelib.Numbers.Cyclic.Int63.Uint63Axioms.to_Z x *
+    2 ^ Corelib.Numbers.Cyclic.Int63.Uint63Axioms.to_Z p)
+   mod Corelib.Numbers.Cyclic.Int63.Uint63Axioms.wB)%Z
+Corelib.Numbers.Cyclic.Int63.PrimInt63.lsl :
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int ->
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int ->
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int
+Corelib.Numbers.Cyclic.Int63.Uint63Axioms.lor_spec :
+  forall x y i : Corelib.Numbers.Cyclic.Int63.PrimInt63.int,
+  Corelib.Numbers.Cyclic.Int63.Uint63Axioms.bit
+    (Corelib.Numbers.Cyclic.Int63.PrimInt63.lor x y) i =
+  Corelib.Numbers.Cyclic.Int63.Uint63Axioms.bit x i
+  || Corelib.Numbers.Cyclic.Int63.Uint63Axioms.bit y i
+Corelib.Numbers.Cyclic.Int63.PrimInt63.lor :
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int ->
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int ->
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int
+Corelib.Strings.PrimStringAxioms.length_spec :
+  forall s : Corelib.Strings.PrimString.string,
+  Corelib.BinNums.IntDef.Z.to_nat
+    (Corelib.Numbers.Cyclic.Int63.Uint63Axioms.to_Z
+       (Corelib.Strings.PrimString.length s)) =
+  Corelib.Init.Datatypes.length (Corelib.Strings.PrimStringAxioms.to_list s)
+Corelib.Strings.PrimString.length :
+  Corelib.Strings.PrimString.string ->
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int
+Corelib.Numbers.Cyclic.Int63.Uint63Axioms.leb_spec :
+  forall x y : Corelib.Numbers.Cyclic.Int63.PrimInt63.int,
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.leb x y =
+  Corelib.Init.Datatypes.true <->
+  (Corelib.Numbers.Cyclic.Int63.Uint63Axioms.to_Z x <=
+   Corelib.Numbers.Cyclic.Int63.Uint63Axioms.to_Z y)%Z
+Corelib.Numbers.Cyclic.Int63.PrimInt63.leb :
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int ->
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int -> Corelib.Init.Datatypes.bool
+Corelib.Numbers.Cyclic.Int63.PrimInt63.land :
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int ->
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int ->
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int
+Corelib.Numbers.Cyclic.Int63.PrimInt63.int : Set
+Corelib.Strings.PrimStringAxioms.get_spec :
+  forall (s : Corelib.Strings.PrimString.string)
+    (i : Corelib.Numbers.Cyclic.Int63.PrimInt63.int),
+  Corelib.Strings.PrimString.get s i =
+  Corelib.Lists.ListDef.nth
+    (Corelib.BinNums.IntDef.Z.to_nat
+       (Corelib.Numbers.Cyclic.Int63.Uint63Axioms.to_Z i))
+    (Corelib.Strings.PrimStringAxioms.to_list s) 0x0%uint63
+Corelib.Strings.PrimString.get :
+  Corelib.Strings.PrimString.string ->
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int ->
+  Corelib.Strings.PrimString.char63
+Stdlib.Logic.FunctionalExtensionality.functional_extensionality_dep :
+  forall (A : Type) (B : A -> Type) (f g : forall x : A, B x),
+  (forall x : A, f x = g x) -> f = g
+Corelib.Numbers.Cyclic.Int63.Uint63Axioms.eqb_refl :
+  forall x : Corelib.Numbers.Cyclic.Int63.PrimInt63.int,
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.eqb x x =
+  Corelib.Init.Datatypes.true
+Corelib.Numbers.Cyclic.Int63.Uint63Axioms.eqb_correct :
+  forall i j : Corelib.Numbers.Cyclic.Int63.PrimInt63.int,
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.eqb i j =
+  Corelib.Init.Datatypes.true -> i = j
+Corelib.Numbers.Cyclic.Int63.PrimInt63.eqb :
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int ->
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int -> Corelib.Init.Datatypes.bool
+Corelib.Strings.PrimStringAxioms.compare_spec :
+  forall s1 s2 : Corelib.Strings.PrimString.string,
+  Corelib.Strings.PrimString.compare s1 s2 =
+  Corelib.Lists.ListDef.list_compare
+    Corelib.Numbers.Cyclic.Int63.PrimInt63.compare
+    (Corelib.Strings.PrimStringAxioms.to_list s1)
+    (Corelib.Strings.PrimStringAxioms.to_list s2)
+Corelib.Numbers.Cyclic.Int63.Uint63Axioms.compare_def_spec :
+  forall x y : Corelib.Numbers.Cyclic.Int63.PrimInt63.int,
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.compare x y =
+  Corelib.Numbers.Cyclic.Int63.Uint63Axioms.compare_def x y
+Corelib.Strings.PrimString.compare :
+  Corelib.Strings.PrimString.string ->
+  Corelib.Strings.PrimString.string -> Corelib.Init.Datatypes.comparison
+Corelib.Numbers.Cyclic.Int63.PrimInt63.compare :
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int ->
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int ->
+  Corelib.Init.Datatypes.comparison
+Stdlib.Logic.Classical_Prop.classic : forall P : Prop, P \/ ~ P
+Corelib.Array.PrimArray.array : Type -> Type
+Corelib.Numbers.Cyclic.Int63.Uint63Axioms.add_spec :
+  forall x y : Corelib.Numbers.Cyclic.Int63.PrimInt63.int,
+  Corelib.Numbers.Cyclic.Int63.Uint63Axioms.to_Z
+    (Corelib.Numbers.Cyclic.Int63.PrimInt63.add x y) =
+  ((Corelib.Numbers.Cyclic.Int63.Uint63Axioms.to_Z x +
+    Corelib.Numbers.Cyclic.Int63.Uint63Axioms.to_Z y)
+   mod Corelib.Numbers.Cyclic.Int63.Uint63Axioms.wB)%Z
+Corelib.Numbers.Cyclic.Int63.PrimInt63.add :
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int ->
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int ->
+  Corelib.Numbers.Cyclic.Int63.PrimInt63.int

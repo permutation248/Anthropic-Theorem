@@ -1,0 +1,75 @@
+$ rocq compile -w -all -Q /work/_build/default/theories OSSVerify.Core -Q /work/_build/default/projects/cjson/cjson_read_fuzzer OSSVerify.cjson.cjson_read_fuzzer -Q /work/_build/default/projects/cjson/cjson_read_fuzzer/proofs/lib OSSVerify.Proofs.cjson.cjson_read_fuzzer.lib -Q /tmp/oft-check-co9ma209/proof-xr4a1pch OSSVerify.Proofs.cjson.cjson_read_fuzzer.ubsan_agrees -Q /tmp/oft-check-co9ma209/proof-xr4a1pch/wrap Wrap.ubsan_agrees /tmp/oft-check-co9ma209/proof-xr4a1pch/wrap/Wrapper.v
+Warning: /work/_build/default/projects/cjson/cjson_read_fuzzer/proofs/lib/U
+was previously bound to OSSVerify.cjson.cjson_read_fuzzer.proofs.lib.U; it is
+remapped to OSSVerify.Proofs.cjson.cjson_read_fuzzer.lib.U
+[overriding-logical-loadpath,filesystem,default]
+Warning:
+/work/_build/default/projects/cjson/cjson_read_fuzzer/proofs/lib/Spec was
+previously bound to OSSVerify.cjson.cjson_read_fuzzer.proofs.lib.Spec; it is
+remapped to OSSVerify.Proofs.cjson.cjson_read_fuzzer.lib.Spec
+[overriding-logical-loadpath,filesystem,default]
+Warning:
+/work/_build/default/projects/cjson/cjson_read_fuzzer/proofs/lib/RL/Reloc was
+previously bound to OSSVerify.cjson.cjson_read_fuzzer.proofs.lib.RL.Reloc; it
+is remapped to OSSVerify.Proofs.cjson.cjson_read_fuzzer.lib.RL.Reloc
+[overriding-logical-loadpath,filesystem,default]
+Warning:
+/work/_build/default/projects/cjson/cjson_read_fuzzer/proofs/lib/RL/I was
+previously bound to OSSVerify.cjson.cjson_read_fuzzer.proofs.lib.RL.I; it is
+remapped to OSSVerify.Proofs.cjson.cjson_read_fuzzer.lib.RL.I
+[overriding-logical-loadpath,filesystem,default]
+Warning:
+/work/_build/default/projects/cjson/cjson_read_fuzzer/proofs/lib/RL/G was
+previously bound to OSSVerify.cjson.cjson_read_fuzzer.proofs.lib.RL.G; it is
+remapped to OSSVerify.Proofs.cjson.cjson_read_fuzzer.lib.RL.G
+[overriding-logical-loadpath,filesystem,default]
+Warning: /work/_build/default/projects/cjson/cjson_read_fuzzer/proofs/lib/RL
+was previously bound to OSSVerify.cjson.cjson_read_fuzzer.proofs.lib.RL; it
+is remapped to OSSVerify.Proofs.cjson.cjson_read_fuzzer.lib.RL
+[overriding-logical-loadpath,filesystem,default]
+Warning: /work/_build/default/projects/cjson/cjson_read_fuzzer/proofs/lib/P
+was previously bound to OSSVerify.cjson.cjson_read_fuzzer.proofs.lib.P; it is
+remapped to OSSVerify.Proofs.cjson.cjson_read_fuzzer.lib.P
+[overriding-logical-loadpath,filesystem,default]
+Warning: /work/_build/default/projects/cjson/cjson_read_fuzzer/proofs/lib/Ox
+was previously bound to OSSVerify.cjson.cjson_read_fuzzer.proofs.lib.Ox; it
+is remapped to OSSVerify.Proofs.cjson.cjson_read_fuzzer.lib.Ox
+[overriding-logical-loadpath,filesystem,default]
+Warning:
+/work/_build/default/projects/cjson/cjson_read_fuzzer/proofs/lib/MallocShared
+was previously bound to
+OSSVerify.cjson.cjson_read_fuzzer.proofs.lib.MallocShared; it is remapped to
+OSSVerify.Proofs.cjson.cjson_read_fuzzer.lib.MallocShared
+[overriding-logical-loadpath,filesystem,default]
+Warning: /work/_build/default/projects/cjson/cjson_read_fuzzer/proofs/lib/Lib
+was previously bound to OSSVerify.cjson.cjson_read_fuzzer.proofs.lib.Lib; it
+is remapped to OSSVerify.Proofs.cjson.cjson_read_fuzzer.lib.Lib
+[overriding-logical-loadpath,filesystem,default]
+Warning: /work/_build/default/projects/cjson/cjson_read_fuzzer/proofs/lib/LRT
+was previously bound to OSSVerify.cjson.cjson_read_fuzzer.proofs.lib.LRT; it
+is remapped to OSSVerify.Proofs.cjson.cjson_read_fuzzer.lib.LRT
+[overriding-logical-loadpath,filesystem,default]
+Warning:
+/work/_build/default/projects/cjson/cjson_read_fuzzer/proofs/lib/Glue was
+previously bound to OSSVerify.cjson.cjson_read_fuzzer.proofs.lib.Glue; it is
+remapped to OSSVerify.Proofs.cjson.cjson_read_fuzzer.lib.Glue
+[overriding-logical-loadpath,filesystem,default]
+Warning: /work/_build/default/projects/cjson/cjson_read_fuzzer/proofs/lib/B
+was previously bound to OSSVerify.cjson.cjson_read_fuzzer.proofs.lib.B; it is
+remapped to OSSVerify.Proofs.cjson.cjson_read_fuzzer.lib.B
+[overriding-logical-loadpath,filesystem,default]
+Warning: /work/_build/default/projects/cjson/cjson_read_fuzzer/proofs/lib/AS
+was previously bound to OSSVerify.cjson.cjson_read_fuzzer.proofs.lib.AS; it
+is remapped to OSSVerify.Proofs.cjson.cjson_read_fuzzer.lib.AS
+[overriding-logical-loadpath,filesystem,default]
+Warning: /work/_build/default/projects/cjson/cjson_read_fuzzer/proofs/lib/A
+was previously bound to OSSVerify.cjson.cjson_read_fuzzer.proofs.lib.A; it is
+remapped to OSSVerify.Proofs.cjson.cjson_read_fuzzer.lib.A
+[overriding-logical-loadpath,filesystem,default]
+Warning: /work/_build/default/projects/cjson/cjson_read_fuzzer/proofs/lib was
+previously bound to OSSVerify.cjson.cjson_read_fuzzer.proofs.lib; it is
+remapped to OSSVerify.Proofs.cjson.cjson_read_fuzzer.lib
+[overriding-logical-loadpath,filesystem,default]
+Warning: /tmp/oft-check-co9ma209/proof-xr4a1pch/wrap was previously bound to
+OSSVerify.Proofs.cjson.cjson_read_fuzzer.ubsan_agrees.wrap; it is remapped to
+Wrap.ubsan_agrees [overriding-logical-loadpath,filesystem,default]
